@@ -1,0 +1,364 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f4f6 !important;
+  overflow: auto !important;
+  padding: 0 !important;
+}
+
+.add-camera-modal {
+  .modal-content {
+    width: 1200px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 2%);
+  }
+}
+
+.add-camera-step-form {
+  position: relative;
+}
+
+.add-camera-step-form .close-button i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  background-color: #e8edfc;
+  color: #000;
+  padding: 3px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-camera-step-form .left-content {
+  padding-top: 40px;
+}
+
+.add-camera-step-form .left-content h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.add-camera-step-form .left-content span {
+  font-size: 17px;
+}
+
+.add-camera-step-form .left-content .single-fleld select {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 12px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #9d9d9d;
+}
+
+.add-camera-step-form .left-content .single-fleld input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 12px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #9d9d9d;
+}
+
+.add-camera-step-form .left-content .single-fleld textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 12px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #9d9d9d;
+}
+
+.add-camera-step-form .step-items {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.add-camera-step-form .step-items.item {
+  text-align: center;
+}
+
+.add-camera-step-form .alert-card {
+  border: 1px solid #c2c2c3;
+}
+
+.add-camera-step-form .alert-header {
+  background-color: #000;
+  color: #fff;
+  padding: 13px 13px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.add-camera-step-form .step-items .item .icon {
+  padding: 11px 18px;
+  background: #ffffff;
+  border: 1px solid #b0b0b0;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.add-camera-step-form .step-items .item .icon.active {
+  background: #27ae60;
+  color: #ffffff;
+}
+
+.form-button-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button.outlined-button {
+  padding: 10px 19px;
+  border: 1px solid #0a57eb;
+  color: #0a57eb;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+button.filled-button {
+  margin-left: 30px;
+  padding: 10px 19px;
+  border: 1px solid #0a57eb;
+  background-color: #0a57eb;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-tag {
+  border: 1px solid #aba6a6;
+  border-radius: 30px;
+  margin-bottom: 5px;
+  width: fit-content;
+  padding: 13px 17px;
+  margin-right: 10px;
+}
+
+.single-tag i {
+  font-size: 18px;
+}
+
+.add-camera-step-form .selected-days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-camera-step-form {
+  // border: 1px solid #ddd;
+  padding: 3px 13px;
+}
+
+.add-camera-step-form .selected-days .day p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.add-camera-step-form .selected-days .form-check {
+  margin-left: 10px;
+}
+
+.add-camera-step-form .form-check-input {
+  width: 19px;
+  height: 19px;
+  background-color: #cfcfcf;
+  border-color: #cfcfcf;
+}
+
+.add-camera-step-form .form-check-input:checked {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+.ant-select-selector {
+  height: 45px;
+}
+
+.ant-select-dropdown {
+  z-index: 1056 !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 44px !important;
+  padding: 7px 11px !important;
+}
+
+.add-camera-step-form .step-items .item {
+  position: relative;
+}
+
+.add-camera-step-form .step-items .item .line {
+  width: 163px;
+  height: 2px;
+  background-color: #cdcdcd;
+  position: absolute;
+  left: 79px;
+  top: 23px;
+}
+
+.add-camera-step-form .step-items .item .line.active {
+  background-color: #27ae60 !important;
+}
+
+.ant-message {
+  z-index: 2000 !important;
+}
+
+.form-check-input:checked {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+.ant-btn-primary {
+  border: 1px solid #0a57eb !important;
+  background-color: #0a57eb !important;
+}
+
+.autoalert-search-bar .mobile-search {
+  display: none;
+}
+
+
+// Mobile responsive 
+@media only screen and (max-width: 600px) {
+  #monitor-holiday-buttons button {
+    width: 72px !important;
+    font-size: 13px;
+  }
+
+  #monitor-holiday-buttons {
+    top: 5px;
+  }
+
+  .css-heg063-MuiTabs-flexContainer {
+    overflow-x: scroll;
+  }
+
+  .search-bar {
+    overflow-x: scroll;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .add-camera-step-form .step-items {
+    max-width: 350px !important;
+  }
+
+  .line {
+    width: 89px !important;
+    left: 66px !important;
+  }
+
+  .autoalert-search-bar .desktop {
+    display: none !important;
+  }
+
+  .autoalert-search-bar .mobile-search {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 17px 20px;
+    background: #ebebeb;
+    border: 1px solid #c4c1c1;
+    margin-top: 8px;
+  }
+
+  .autoalert-search-bar .mobile-search .single_item {
+    margin-bottom: 15px;
+  }
+
+  .autoalert-search-bar .mobile-search .single_item label {
+    color: #000;
+    font-size: 17px;
+  }
+
+  .autoalert-search-bar .mobile-search .single_item .inner-content {
+    background: #fff;
+    height: 53px;
+    border-radius: 5px;
+    margin-top: 16px;
+  }
+
+  .autoalert-search-bar .mobile-search .single_item .inner-content p {
+    padding-top: 14px;
+    font-size: 17px;
+  }
+
+  .autoalert-search-bar .search-button {
+    padding: 17px 20px;
+    outline: none;
+    background-color: #0a57eb;
+    border: 1px solid #0a57eb;
+    color: #fff;
+    position: relative;
+  }
+
+  .autoalert-search-bar .search-button i {
+    font-size: 20px;
+    position: relative;
+    left: -14px;
+    top: 6px;
+  }
+
+  .my_alert_not_found {
+    position: relative;
+  }
+
+  .tab-wrapper .css-jpln7h-MuiTabs-scroller {
+    overflow: visible !important;
+  }
+
+  .tab-wrapper .makeStyles-dropBtn-3 {
+    top: 60px !important;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+  .tab-wrapper .css-1ujnqem-MuiTabs-root {
+    overflow: visible !important;
+  }
+}
+
+.ant-dropdown-menu-item {
+  padding: 11px 10px !important;
+}
+
+.ant-modal-content {
+  width: 90%;
+  margin: auto;
+}

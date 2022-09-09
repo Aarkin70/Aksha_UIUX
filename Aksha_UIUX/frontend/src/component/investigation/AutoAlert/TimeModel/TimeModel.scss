@@ -1,0 +1,54 @@
+.time-picker-outer-wrapper {
+  .times-selectors {
+    display:flex;
+    justify-content: space-between;
+    width: 325px;
+  }
+ .times-selectors .item {
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+
+    .para {
+      padding: 11px 40px;
+      margin: 9px 6px;
+      border-radius: 10px;
+      transition: all 500ms;
+      &:hover {
+        background-color: #E8EDFC;
+      }
+      &.active {
+        background-color: #E8EDFC;
+      }
+    } 
+  }
+  .single-time-picker {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  .single-time-picker .time-val {
+    padding:21px 15px 8px 15px;
+    position: relative;
+  }
+  i {
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+  }
+  span {
+    position: absolute;
+    top: 2px;
+    font-size: 12px;
+    color: #AFB6C0;
+  }
+  p {
+    color: #000;
+  }
+
+  
+  
+
+
+}

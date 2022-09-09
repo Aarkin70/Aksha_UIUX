@@ -1,0 +1,22 @@
+.add-camera-modal .ant-modal-close{
+    right: 40px;
+    top: 27px;
+    background: #0a57eb;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 0;
+}
+.add-camera-modal  .anticon-close{
+    color: #fff;
+    position: relative;
+    top: -8px;
+}
+.add-camera-modal .ant-modal-close-x {
+    width: 44px !important;
+    height: 45px !important;
+}
+@media only screen and (max-width:600px){
+    .add-camera-step-form .step-items{
+        margin-top:29px !important;
+    }
+}

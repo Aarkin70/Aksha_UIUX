@@ -1,0 +1,58 @@
+.recentAlert {
+  .rowstyle {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .videoContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 10;
+    top: 1%;
+    right: 0;
+  }
+
+  .bottom-content {
+    position: absolute;
+    margin-top: 0rem;
+    right: 0;
+    top: 1rem;
+    .bottomTextContainer {
+      text-align: initial;
+      margin-left: 1rem;
+    }
+    .parentText {
+      color: #3158eb;
+      font-weight: 600;
+      border-radius: 5px;
+      font-size: 1.3rem;
+    }
+    .childText {
+      color: white;
+      font-weight: 200;
+    }
+  }
+
+  .middle {
+    transition: 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    // width: 100%;
+  }
+}
